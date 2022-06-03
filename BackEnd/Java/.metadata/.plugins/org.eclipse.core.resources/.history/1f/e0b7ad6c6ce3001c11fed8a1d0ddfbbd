@@ -1,0 +1,8 @@
+package br.com.stefanini.orientacaoaoobjetos;
+
+public class Mercedes extends Carro {
+	
+	public Mercedes() {
+		this.setMarca("Mercedes");
+	}
+}

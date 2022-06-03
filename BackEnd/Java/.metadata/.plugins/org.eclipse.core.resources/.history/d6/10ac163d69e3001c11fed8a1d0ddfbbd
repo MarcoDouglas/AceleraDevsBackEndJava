@@ -1,6 +1,6 @@
 package br.com.stefanini.orientacaoaoobjetos.executor;
-import br.com.stefanini.orientacaoaoobjetos.BMW;
-import br.com.stefanini.orientacaoaoobjetos.Carro;
+
+import br.com.stefanini.orientacaodeobjetos.Carro;
 
 public class Executor {
 	public static void main(String[] args) {
@@ -19,20 +19,5 @@ public class Executor {
 		Carro carro2=new Carro ("Mercedes");
 		System.out.println(carro2.getMarca());
 		
-		System.out.println(soma(10, 5));
-		
-		System.out.println(soma(10, 15, 6));
-		
-		BMW bmw=new BMW();
-		bmw.setVelocidade(100);
-		System.out.println(bmw.acelerar());
-		
-	}
-	
-	public static int soma(int a, int b) {
-		return a + b;
-	}
-	public static int soma(int a, int b, int c) {
-		return a + b+ c;
 	}
 }
