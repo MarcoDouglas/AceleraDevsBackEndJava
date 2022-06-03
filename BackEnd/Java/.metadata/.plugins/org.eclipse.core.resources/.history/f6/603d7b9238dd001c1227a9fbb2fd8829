@@ -1,7 +1,0 @@
-package com.stefanini.cursojavabasico.variaveis;
-
-public class AulaTres {
-	public static void main(String[] args) {
-		
-	}
-}

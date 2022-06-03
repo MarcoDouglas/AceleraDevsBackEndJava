@@ -1,2 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy/>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="javax.sql.rowset.CachedRowSet"/>
+    <fullyQualifiedTypeName name="br.com.stefanini.orientacaodeobjetos.Carro"/>
+    <fullyQualifiedTypeName name="br.com.stefanini.orientacaoaoobjetos.BMW"/>
+    <fullyQualifiedTypeName name="br.com.stefanini.orientacaoaoobjetos.Mercedes"/>
+</qualifiedTypeNameHistroy>
