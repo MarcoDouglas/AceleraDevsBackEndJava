@@ -1,7 +1,6 @@
 package br.com.stefanini.orientacaoaoobjetos.executor;
 import br.com.stefanini.orientacaoaoobjetos.BMW;
 import br.com.stefanini.orientacaoaoobjetos.Carro;
-import br.com.stefanini.orientacaoaoobjetos.Mercedes;
 
 public class Executor {
 	public static void main(String[] args) {
@@ -27,9 +26,6 @@ public class Executor {
 		BMW bmw=new BMW();
 		bmw.setVelocidade(100);
 		System.out.println(bmw.acelerar());
-		
-		Mercedes mercedes = new Mercedes();
-		System.out.println(mercedes.acelerar());
 		
 	}
 	
