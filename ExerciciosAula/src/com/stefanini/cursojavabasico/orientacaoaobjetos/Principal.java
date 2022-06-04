@@ -12,24 +12,45 @@ public class Principal {
 		Carro mercedes =new Carro ("Mercedes","c180");
 		
 		BMW bmwDois = new BMW();
-		
-		System.out.println(bmwDois.calcularTaxaAceleracao(100.5, 10.5));
-		
-		System.out.println(mercedes.getMarca());
-		System.out.println(mercedes.getModelo());
+		Tesla tesla=new Tesla();
+		tesla.isDirigeSozinho();
 		
 		
-		System.out.println(bmw.getMarca());
-		System.out.println(bmw.getModelo());
-		System.out.println(bmw.getQuilometrosPorLitro());
-		System.out.println(bmw.getTaxaAceleracao());
-		System.out.println(bmw.getVelocidadeMaxima());
-		System.out.println(bmw.calcularTaxaAceleracao(100, 5));
-		bmw.acelerar();
-		bmw.frear();
+		Carro teslaDois=new Tesla();
+		//tesla Dois não tem acesso a atributos e metodos da classe Tesla.
+		//usando casting para ter acesso a classe Tesla.
+		((Tesla)teslaDois).setDirigeSozinho(true);
+		System.out.println(((Tesla) teslaDois).isDirigeSozinho());
 		
-		System.out.println(bmw.calcularTaxaAceleracao(bmw.getVelocidadeMaxima(), 0 , 10,0));
-		System.out.println(bmw.calcularTaxaAceleracao(bmw.getVelocidadeMaxima(), 5));
+		Carro[] carros = new Carro[] {bmw, bmwDois, tesla, teslaDois};
+		
+		for (Carro carro: carros) {
+			if (carro instanceof Tesla) {
+				//Checando se é uma instancia de Tesla.
+				System.out.println(((Tesla)carro).isDirigeSozinho());
+			}
+		}
+ 		
+		bmwDois.calcularTaxaAceleracao(100.50, 10);
+		tesla.calcularTaxaAceleracao(100.50, 10);
+		/*
+		 * System.out.println(bmwDois.calcularTaxaAceleracao(100.5, 10.5));
+		 * 
+		 * System.out.println(mercedes.getMarca());
+		 * System.out.println(mercedes.getModelo());
+		 * 
+		 * 
+		 * System.out.println(bmw.getMarca()); System.out.println(bmw.getModelo());
+		 * System.out.println(bmw.getQuilometrosPorLitro());
+		 * System.out.println(bmw.getTaxaAceleracao());
+		 * System.out.println(bmw.getVelocidadeMaxima());
+		 * System.out.println(bmw.calcularTaxaAceleracao(100, 5)); bmw.acelerar();
+		 * bmw.frear();
+		 * 
+		 * System.out.println(bmw.calcularTaxaAceleracao(bmw.getVelocidadeMaxima(), 0 ,
+		 * 10,0));
+		 * System.out.println(bmw.calcularTaxaAceleracao(bmw.getVelocidadeMaxima(), 5));
+		 */
 	}
 	
 }
