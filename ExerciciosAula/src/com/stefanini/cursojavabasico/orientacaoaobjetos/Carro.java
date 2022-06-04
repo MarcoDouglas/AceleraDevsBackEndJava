@@ -85,4 +85,8 @@ public class Carro {
 		return (velocidadeFinal - 0)/ (tempoFinal - 0)*3.6;
 	}
 	
+	public String calcularTaxaAceleracao(int velocidadeFinal, int tempoFinal){
+		return "" +(velocidadeFinal - 0)/ (tempoFinal - 0)*3.6;
+	}
+	
 }

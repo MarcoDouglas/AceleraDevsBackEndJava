@@ -11,15 +11,20 @@ public class Principal {
 		
 		Carro mercedes =new Carro ("Mercedes","c180");
 		
+		BMW bmwDois = new BMW();
+		
+		System.out.println(bmwDois.calcularTaxaAceleracao(100.5, 10.5));
+		
 		System.out.println(mercedes.getMarca());
 		System.out.println(mercedes.getModelo());
+		
 		
 		System.out.println(bmw.getMarca());
 		System.out.println(bmw.getModelo());
 		System.out.println(bmw.getQuilometrosPorLitro());
 		System.out.println(bmw.getTaxaAceleracao());
 		System.out.println(bmw.getVelocidadeMaxima());
-		
+		System.out.println(bmw.calcularTaxaAceleracao(100, 5));
 		bmw.acelerar();
 		bmw.frear();
 		
