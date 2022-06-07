@@ -1,4 +1,5 @@
 package com.stefanini.cursojavabasico.vetoresematrizes;
+//TESTE DE COMMIT
 
 public class AulaQuatro {
 	//Vetores
@@ -24,7 +25,7 @@ public class AulaQuatro {
 		
 		System.out.println(carros.length);	
 
-		for (String carro:carros){  //carro tá recebendo de carros.
+		for (String carro:carros){  //carro tï¿½ recebendo de carros.
 			System.out.println(carro);			
 		}	
 
