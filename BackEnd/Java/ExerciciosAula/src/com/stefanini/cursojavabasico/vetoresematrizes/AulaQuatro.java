@@ -5,7 +5,7 @@ package com.stefanini.cursojavabasico.vetoresematrizes;
 public class AulaQuatro {
 	//Vetores
 		public static void main(String[] args) {
-		System.out.println("Teste");
+		
 		
 		int notas[]  = new int[10];
 		
