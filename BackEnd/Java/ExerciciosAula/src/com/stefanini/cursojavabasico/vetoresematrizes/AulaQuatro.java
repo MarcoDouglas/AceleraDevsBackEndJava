@@ -1,5 +1,5 @@
 package com.stefanini.cursojavabasico.vetoresematrizes;
-//TESTE DE COMMIT
+//TESTE DE COMMIT.
 
 public class AulaQuatro {
 	//Vetores
