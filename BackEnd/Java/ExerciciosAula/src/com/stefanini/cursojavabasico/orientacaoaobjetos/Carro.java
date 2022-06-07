@@ -45,9 +45,9 @@ public class Carro {
 		return velocidadeMaxima;
 	}
 
-	public void setVelocidadeMaxima(int velocidadeMaxima) {
+	public void setVelocidadeMaxima(int velocidadeMaxima)throws NegocioException {
 		if (velocidadeMaxima < 0) {
-			System.out.println("Valor é inválido");
+			throw new NegocioException ("Valor é inválido");
 		}else {
 			this.velocidadeMaxima = velocidadeMaxima;
 		}

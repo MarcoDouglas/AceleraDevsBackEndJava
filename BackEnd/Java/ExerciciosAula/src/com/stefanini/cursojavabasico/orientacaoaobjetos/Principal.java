@@ -7,13 +7,22 @@ public class Principal {
 		bmw.setModelo  ("M3");
 		bmw.setQuilometrosPorLitro (7.5);
 		bmw.setTaxaAceleracao  (50);
-		bmw.setVelocidadeMaxima(280);
+	//	bmw.setVelocidadeMaxima(280);
 		
 		Carro mercedes =new Carro ("Mercedes","c180");
 		
 		BMW bmwDois = new BMW();
 		Tesla tesla=new Tesla();
 		tesla.isDirigeSozinho();
+		
+		try {
+			bmwDois.setVelocidadeMaxima(-10);
+		}catch (NegocioException e) {
+			// TODO: handle exception
+			System.out.println(e);
+		}finally {//finally executa independente de sucesso ou não.
+			System.out.println("Passou aqui");
+		}
 		
 		
 		Carro teslaDois=new Tesla();
