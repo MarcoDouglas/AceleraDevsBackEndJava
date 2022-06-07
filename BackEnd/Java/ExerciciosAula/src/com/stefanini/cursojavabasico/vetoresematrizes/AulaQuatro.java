@@ -1,10 +1,11 @@
 package com.stefanini.cursojavabasico.vetoresematrizes;
 //TESTE DE COMMIT.
+//dcds
 
 public class AulaQuatro {
 	//Vetores
 		public static void main(String[] args) {
-			
+			System.out.println("Teste");
 		
 		int notas[]  = new int[10];
 		
