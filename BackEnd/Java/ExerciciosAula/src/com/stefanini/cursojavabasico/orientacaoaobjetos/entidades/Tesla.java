@@ -21,4 +21,10 @@ public class Tesla extends Carro {
 		System.out.println("Tesla Sobrescrita");
 		return velocidadeFinal * tempoFinal;
 	}
+
+	@Override
+	public void piscarAlerta() {
+		System.out.println("Tesla piscando alerta...");
+		
+	}
 }

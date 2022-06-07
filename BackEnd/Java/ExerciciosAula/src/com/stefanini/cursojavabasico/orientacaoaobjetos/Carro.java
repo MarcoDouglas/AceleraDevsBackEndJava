@@ -1,7 +1,11 @@
 package com.stefanini.cursojavabasico.orientacaoaobjetos;
 
-public class Carro {
+public abstract class Carro {
 	/*
+	 * Classe abstract não pode ser instanciadas.
+	 * Metodos abstract; Na classe pai não possui corpo //public abstract voi piscarAlerta()// sendo obrigado ser aplicado em classes filhas;
+	 * 
+	 * 
 	 * Modificadores de acesso
 	 * default => não uma palavra chave(palavra reservada). Acessível própria classe ou a outra classe. Não acessivel em outro pacote.
 	 *public=> Acessível propria classe, classe mesmo pacote, subclasses(extends) todas as demais classes
@@ -25,6 +29,8 @@ public class Carro {
 		this.modelo = modelo;
 	}
 	
+	public abstract void piscarAlerta();
+	
 	public String getMarca() {
 		return marca;
 	}
@@ -40,7 +46,7 @@ public class Carro {
 	public void setModelo(String modelo) {
 		this.modelo = modelo;
 	}
-
+	
 	public int getVelocidadeMaxima() {
 		return velocidadeMaxima;
 	}

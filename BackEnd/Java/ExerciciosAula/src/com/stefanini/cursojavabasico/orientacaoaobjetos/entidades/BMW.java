@@ -13,5 +13,11 @@ public class BMW extends Carro{
 	  public double calcularTaxaAceleracao(double velocidadeFinal, double
 	  tempoFinal) { System.out.println("BMW Sobrescrita"); return velocidadeFinal /
 	  tempoFinal; }
+
+	@Override
+	public void piscarAlerta() {
+		System.out.println("BMW piscando alerta...");
+		
+	}
 	 
 }

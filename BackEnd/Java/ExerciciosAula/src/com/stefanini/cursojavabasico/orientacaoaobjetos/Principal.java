@@ -5,18 +5,18 @@ import com.stefanini.cursojavabasico.orientacaoaobjetos.entidades.Tesla;
 
 public class Principal {
 	public static void main(String[] args) {
-		Carro bmw = new Carro();
-		bmw.setMarca ("BMW");
-		bmw.setModelo  ("M3");
-		bmw.setQuilometrosPorLitro (7.5);
-		bmw.setTaxaAceleracao  (50);
-	//	bmw.setVelocidadeMaxima(280);
-		
-		Carro mercedes =new Carro ("Mercedes","c180");
+		/*
+		 * Carro bmw = new Carro(); bmw.setMarca ("BMW"); bmw.setModelo ("M3");
+		 * bmw.setQuilometrosPorLitro (7.5); bmw.setTaxaAceleracao (50); //
+		 * bmw.setVelocidadeMaxima(280);
+		 * 
+		 * Carro mercedes =new Carro ("Mercedes","c180");
+		 */
 		
 		BMW bmwDois = new BMW();
 		Tesla tesla=new Tesla();
 		tesla.isDirigeSozinho();
+		bmwDois.piscarAlerta();
 		
 		try {
 			bmwDois.setVelocidadeMaxima(-10);
@@ -33,15 +33,13 @@ public class Principal {
 		//usando casting para ter acesso a classe Tesla.
 		((Tesla)teslaDois).setDirigeSozinho(true);
 		System.out.println(((Tesla) teslaDois).isDirigeSozinho());
+		teslaDois.piscarAlerta();
+	//	Carro[] carros = new Carro[] {bmw, bmwDois, tesla, teslaDois};
 		
-		Carro[] carros = new Carro[] {bmw, bmwDois, tesla, teslaDois};
-		
-		for (Carro carro: carros) {
-			if (carro instanceof Tesla) {
-				//Checando se é uma instancia de Tesla.
-				System.out.println(((Tesla)carro).isDirigeSozinho());
-			}
-		}
+	/*
+	 * for (Carro carro: carros) { if (carro instanceof Tesla) { //Checando se é uma
+	 * instancia de Tesla. System.out.println(((Tesla)carro).isDirigeSozinho()); } }
+	 */
  		
 		bmwDois.calcularTaxaAceleracao(100.50, 10);
 		tesla.calcularTaxaAceleracao(100.50, 10);
