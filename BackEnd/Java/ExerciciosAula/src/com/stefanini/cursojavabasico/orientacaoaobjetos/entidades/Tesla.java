@@ -1,4 +1,6 @@
-package com.stefanini.cursojavabasico.orientacaoaobjetos;
+package com.stefanini.cursojavabasico.orientacaoaobjetos.entidades;
+
+import com.stefanini.cursojavabasico.orientacaoaobjetos.Carro;
 
 public class Tesla extends Carro {
 	private boolean dirigeSozinho;

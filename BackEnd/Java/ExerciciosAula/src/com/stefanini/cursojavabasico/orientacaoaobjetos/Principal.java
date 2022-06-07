@@ -1,5 +1,8 @@
 package com.stefanini.cursojavabasico.orientacaoaobjetos;
 
+import com.stefanini.cursojavabasico.orientacaoaobjetos.entidades.BMW;
+import com.stefanini.cursojavabasico.orientacaoaobjetos.entidades.Tesla;
+
 public class Principal {
 	public static void main(String[] args) {
 		Carro bmw = new Carro();
