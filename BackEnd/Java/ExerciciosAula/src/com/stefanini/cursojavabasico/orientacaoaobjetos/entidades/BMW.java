@@ -1,8 +1,10 @@
 package com.stefanini.cursojavabasico.orientacaoaobjetos.entidades;
 
 import com.stefanini.cursojavabasico.orientacaoaobjetos.Carro;
+import com.stefanini.cursojavabasico.orientacaoaobjetos.Esportivo;
+import com.stefanini.cursojavabasico.orientacaoaobjetos.Utilitario;
 
-public class BMW extends Carro{
+public class BMW extends Carro implements Esportivo, Utilitario {
 
 
 	public BMW(){
@@ -19,5 +21,17 @@ public class BMW extends Carro{
 		System.out.println("BMW piscando alerta...");
 		
 	}
+
+	@Override
+	public void acionarTubo() {
+		// TODO Auto-generated method stub
+	}
+
+	@Override
+	public void passear() {
+		// TODO Auto-generated method stub
+		
+	}
+	
 	 
 }
