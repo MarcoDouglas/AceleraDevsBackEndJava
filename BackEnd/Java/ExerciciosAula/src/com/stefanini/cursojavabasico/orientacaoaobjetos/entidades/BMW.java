@@ -1,10 +1,11 @@
 package com.stefanini.cursojavabasico.orientacaoaobjetos.entidades;
 
 import com.stefanini.cursojavabasico.orientacaoaobjetos.Carro;
+import com.stefanini.cursojavabasico.orientacaoaobjetos.Conversivel;
 import com.stefanini.cursojavabasico.orientacaoaobjetos.Esportivo;
 import com.stefanini.cursojavabasico.orientacaoaobjetos.Utilitario;
 
-public class BMW extends Carro implements Esportivo, Utilitario {
+public class BMW extends Carro implements Conversivel, Utilitario {
 
 
 	public BMW(){
@@ -29,6 +30,12 @@ public class BMW extends Carro implements Esportivo, Utilitario {
 
 	@Override
 	public void passear() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void abrirCapo() {
 		// TODO Auto-generated method stub
 		
 	}

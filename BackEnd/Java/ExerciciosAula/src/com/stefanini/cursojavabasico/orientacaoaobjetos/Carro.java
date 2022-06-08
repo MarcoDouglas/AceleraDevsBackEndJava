@@ -5,6 +5,8 @@ public abstract class Carro {
 	 * Classe abstract não pode ser instanciadas.
 	 * Metodos abstract; Na classe pai não possui corpo //public abstract voi piscarAlerta()// sendo obrigado ser aplicado em classes filhas;
 	 * 
+	 *Definindo como (FINAL) essa classe não pode ser extendida.
+	 *
 	 * 
 	 * Modificadores de acesso
 	 * default => não uma palavra chave(palavra reservada). Acessível própria classe ou a outra classe. Não acessivel em outro pacote.

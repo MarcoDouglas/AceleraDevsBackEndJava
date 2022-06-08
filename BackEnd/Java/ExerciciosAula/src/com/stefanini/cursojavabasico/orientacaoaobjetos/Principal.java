@@ -4,7 +4,16 @@ import com.stefanini.cursojavabasico.orientacaoaobjetos.entidades.BMW;
 import com.stefanini.cursojavabasico.orientacaoaobjetos.entidades.Tesla;
 
 public class Principal {
+
+	//metodos static pra acessar a outra classe precisa ser static
+	static int valor = 10;
+	static void print () {
+		System.out.println(valor);
+	}
+	
 	public static void main(String[] args) {
+		valor=10;
+		
 		/*
 		 * Carro bmw = new Carro(); bmw.setMarca ("BMW"); bmw.setModelo ("M3");
 		 * bmw.setQuilometrosPorLitro (7.5); bmw.setTaxaAceleracao (50); //
@@ -12,7 +21,7 @@ public class Principal {
 		 * 
 		 * Carro mercedes =new Carro ("Mercedes","c180");
 		 */
-		
+		BMW bmw = new BMW();
 		BMW bmwDois = new BMW();
 		Tesla tesla=new Tesla();
 		tesla.isDirigeSozinho();
@@ -34,12 +43,19 @@ public class Principal {
 		((Tesla)teslaDois).setDirigeSozinho(true);
 		System.out.println(((Tesla) teslaDois).isDirigeSozinho());
 		teslaDois.piscarAlerta();
-	//	Carro[] carros = new Carro[] {bmw, bmwDois, tesla, teslaDois};
+		Carro[] carros = new Carro[] {bmw, bmwDois, tesla, teslaDois};
 		
-	/*
-	 * for (Carro carro: carros) { if (carro instanceof Tesla) { //Checando se é uma
-	 * instancia de Tesla. System.out.println(((Tesla)carro).isDirigeSozinho()); } }
-	 */
+	
+	  for (Carro carro: carros) {
+		  if (Constantes.MARCA_FAMOSA.equals(carro.getMarca())){
+			System.out.println("Carro de marcafamosa");
+		}
+		  if (carro instanceof Tesla)  { //Checando se é uma instancia de Tesla.
+			  System.out.println(((Tesla)carro).isDirigeSozinho()); 
+		  		}
+		  }
+		  
+	 
  		
 		bmwDois.calcularTaxaAceleracao(100.50, 10);
 		tesla.calcularTaxaAceleracao(100.50, 10);
